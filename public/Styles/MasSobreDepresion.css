@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f2f1; /* Fondo azul claro */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-style: italic; /* Fuente cursiva */
+}
+
+p {
+    font-style: italic; /* Fuente cursiva */
+    line-height: 1.5;
+}
+
+nav {
+    background-color: #008080; /* Azul verdoso */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
