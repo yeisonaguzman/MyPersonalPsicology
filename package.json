@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Este es mi trabajo final para el diplomado de desarrollo web",
   "main": "app.js",
-  "types": "module",
+  "type": "module",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"

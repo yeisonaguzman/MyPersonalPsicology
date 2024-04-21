@@ -11,7 +11,7 @@ const conexionMongo = async() => {
 
 try{
 
-    console.log('conexion exitosa');
+    console.log('conexion exitosa. Que emocioooonn');
 }catch(error){
         console.log('error de conexion:', error.message);
 }
