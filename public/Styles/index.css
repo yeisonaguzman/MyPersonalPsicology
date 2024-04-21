@@ -3,14 +3,25 @@ p {
     font-size: 16px;
 }
 body {
-    background-color: #8989bd; /* Fondo azul oscuro */
-    color: white; /* Color de letra blanco */
-  }
-  .navbar {
-    font-style: italic; /* Letra cursiva en la barra de navegación */
-  }
+  background-color: #add8e6; /* Cambiar a azul claro */
+  background-image: url('public/assets/Fondo pagina.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  margin: 0;
+  padding: 0; 
+}
 
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-  }
+.footer-social-icons img {
+  margin-right: 15px;
+  width: 40px; 
+  height: auto;
+  display: inline-block; 
+}
+
+.footer-social-icons img:last-child {
+  margin-right: 0;
+}
+
+  

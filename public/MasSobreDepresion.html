@@ -7,7 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e0f2f1; /* Fondo azul claro */
+            background-color: #333; 
+            color: white;
             margin: 0;
             padding: 0;
         }
@@ -19,36 +20,94 @@
         }
 
         h1 {
-            font-style: italic; /* Fuente cursiva */
+            font-style: italic; 
         }
 
         p {
-            font-style: italic; /* Fuente cursiva */
+            font-style: italic; 
             line-height: 1.5;
         }
 
         nav {
-            background-color: #008080; /* Azul verdoso */
+            background-color: #008080;
             color: white;
-            padding: 10px 0;
-            text-align: center;
+            padding: 10px 20px;
+            text-align: left;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin-right: 20px;
+            font-size: 18px;
         }
 
         nav a:hover {
             text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .footer-content .column {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .footer-content h3 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .footer-content p {
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .footer-social-icons {
+            margin-top: 30px;
+        }
+
+        .footer-social-icons img {
+            width: 50px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        .footer-social-icons img:last-child {
+            margin-right: 0;
+        }
+
+        .footer-social-icons img:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content .column {
+                flex-basis: 100%;
+                margin: 0 0 20px 0;
+            }
         }
     </style>
 </head>
 <body>
     <nav>
         <a href="index.html">Inicio</a>
-        <a href="Formulario.html">Consulta gratuita</a>
+        <a href="MasSobreDepresion.html">Más sobre depresión</a>
+        <a href="Registro.html">Registro</a>
+        <a href="Registro.html">Curiosidades</a>
     </nav>
     <div class="container">
         <h1>¿Qué es la Depresión?</h1>
@@ -73,5 +132,27 @@
         <h2 id="formulario">Imagen 2: Frases relacionadas con la Depresión</h2>
         <img src="assets/Frases-sobre-la-depresión-10.jpg" alt="Imagen 2">
     </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="column">
+                    <h3>Información del Creador</h3>
+                    <p>Yeison Andrés Guzman</p>
+                    <p>Email: yguzmanl@ibero.edu.co</p>
+                    <p>Teléfono: 3153852490</p>
+                </div>
+                <div class="column">
+                    <h3>Redes Sociales</h3>
+                    <div class="footer-social-icons">
+                        <a href="#"><img src="assets/Imagen facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="assets/Twitter.jpg" alt="Twitter"></a>
+                        <a href="#"><img src="assets/Insta.jpg" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <p>Todos los derechos reservados por Yeison Andres Guzman &copy; 2024</p>
+        </div>
+    </footer>
 </body>
 </html>

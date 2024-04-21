@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Consulta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px; 
+            text-align: left; 
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-style: italic;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .footer-content .column {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .footer-content h3 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .footer-content p {
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .footer-social-icons {
+            margin-top: 30px;
+        }
+
+        .footer-social-icons img {
+            width: 50px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        .footer-social-icons img:last-child {
+            margin-right: 0;
+        }
+
+        .footer-social-icons img:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content .column {
+                flex-basis: 100%;
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulario de Consulta</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="MasSobreDepresion.html">Más sobre Depresión</a>
+        <a href="Registro.html">Registro</a>
+        <a href="pagina3.html">Curiosidades</a> 
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombres">Nombres y Apellidos:</label>
+                <input type="text" id="nombres" name="nombres" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="celular">Celular:</label>
+                <input type="text" id="celular" name="celular" required>
+
+                <label for="motivo">Motivo de Consulta:</label>
+                <textarea id="motivo" name="motivo" rows="4" required></textarea>
+
+                <input type="submit" value="Enviar Consulta">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="column">
+                    <h3>Información del Creador</h3>
+                    <p>Yeison Andrés Guzman</p>
+                    <p>Email: yguzmanl@ibero.edu.co</p>
+                    <p>Teléfono: 3153852490</p>
+                </div>
+                <div class="column">
+                    <h3>Redes Sociales</h3>
+                    <div class="footer-social-icons">
+                        <a href="#"><img src="assets/Imagen facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="assets/Twitter.jpg" alt="Twitter"></a>
+                        <a href="#"><img src="assets/Insta.jpg" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <p>Todos los derechos reservados por Yeison Andres Guzman &copy; 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
