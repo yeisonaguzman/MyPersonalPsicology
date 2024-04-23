@@ -3,6 +3,7 @@ import express from 'express';
 import path from 'path';
 import dotenv from 'dotenv';
 import conexionMongo from './src/config/baseDatos.js';
+import usuarioRouter from './src/routes/user.routes.js';
 
 
 
@@ -22,6 +23,7 @@ const rutaPublica = path.join(process.cwd(), 'public');
 app.use(express.static(rutaPublica));
 
 app.use(express.json());
+app.use('/api', usuarioRouter);
 
 //Especificamos que va a acceder a nuestro index HTML
 

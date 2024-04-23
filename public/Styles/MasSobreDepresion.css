@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e0f2f1; /* Fondo azul claro */
+    background-color: #e0f2f1; 
     margin: 0;
     padding: 0;
 }
@@ -12,16 +12,16 @@ body {
 }
 
 h1 {
-    font-style: italic; /* Fuente cursiva */
+    font-style: italic; 
 }
 
 p {
-    font-style: italic; /* Fuente cursiva */
+    font-style: italic; 
     line-height: 1.5;
 }
 
 nav {
-    background-color: #008080; /* Azul verdoso */
+    background-color: #008080; 
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -36,3 +36,9 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+carousel-image {
+    width: 50%;
+    height: 300px; 
+    object-fit: cover;
+  }
