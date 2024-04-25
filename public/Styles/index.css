@@ -3,11 +3,11 @@ p {
     font-size: 16px;
 }
 body {
-  background-color: #add8e6; /* Cambiar a azul claro */
+  background-color: #386e80;
   background-image: url('public/assets/Fondo pagina.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
+  color: rgb(148, 47, 47);
   height: 100vh;
   margin: 0;
   padding: 0; 

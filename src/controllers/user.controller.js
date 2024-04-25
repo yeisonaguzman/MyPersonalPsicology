@@ -11,17 +11,60 @@ import usuarioModel from "../models/user.models.js";
 // Se hace una prueba inicial
 
 export const getUsuario = async(req, res) => {
-    return res.send('Funciona la petición GET');
+
+    //Manejo de errores con try y catch
+
+try{
+    let usuarios = await usuarioModel.find();
+    return res.send(usuarios);
+
+}catch(error){
+    return res.json({error: "error al mostrar los datos" + error });
+}
 }
 
 //Logica para crear usuarios
 
 export const postUsuario = async (req, res) => {
-    return res.send('Funciona la petición POST');
+    try{
+        let datosUsuario = req.body;
+        let nuevoUsuario = await usuarioModel.create(datosUsuario);
+        return res.json(nuevoUsuario)
+
+    } catch(error){
+        return res.json({error: "error al crear el usuario", message: error.message });
+
+    }
 }
 export const putUsuario = async (req, res) => {
-    return res.send('Funciona la petición PUT');
+    try{
+        let datosModificar= req.body;
+        let idModificar = req.params._id;
+        
+        await usuarioModel.findByIdAndUpdate(idModificar, datosModificar);
+        return res.json({message: "Usuario actualizado correctamente"});
+
+    }catch(error){
+        return res.json({error: "error al modificar usuario", message: error.message});
+
+
+    }
 }
+
 export const deleteUsuario = async (req, res) => {
-    return res.send('Funciona la petición DELETE');
+    try{
+        let idEliminar= req.params._id;
+        let usuarioEliminad= await usuarioModel.findByIdAndDelete(idEliminar);
+
+        if(usuarioEliminado=true){
+            return res.json({message: "Usuario eliminado correctamente"});
+            
+        }else{
+            return res.json({message: "Ups! no se pudo eliminar ese usuario"});
+        }
+
+    }catch(error){
+        return res.json({error: "error al eliminar usuario", message:error.message});
+        
+    }
 }
