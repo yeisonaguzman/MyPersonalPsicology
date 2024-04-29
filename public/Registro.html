@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f0f8ff;
             margin: 0;
             padding: 0;
         }
@@ -19,23 +19,29 @@
         }
 
         header {
-            background-color: #333;
+            background-color: #4682b4;
             color: white;
-            padding: 10px 0;
+            padding: 10px;
             text-align: center;
         }
 
         nav {
-            background-color: #444;
-            color: white;
-            padding: 10px 20px; 
-            text-align: left; 
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
             margin-right: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #d3d3d3; 
         }
 
         .content {
@@ -77,15 +83,31 @@
             cursor: pointer;
         }
 
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+        .boton-registrar {
+    background-color: #4CAF50;
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 5px; 
+}
 
-        footer {
-            background-color: #333;
+.boton-registrar:hover {
+    background-color: #45a049;
+}
+
+footer {
+            background-color: #333; 
             color: white;
-            padding: 50px 0;
             text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
 
         .footer-content {
@@ -135,6 +157,38 @@
             }
         }
     </style>
+
+<!-- Link de mi archivo Java -->
+
+<script src="./scripts/Registro.js" defer></script>
+
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        /* Estilos CSS para mejorar la apariencia */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -151,39 +205,41 @@
             <h2>Formulario de Registro</h2>
             <form action="#" method="post">
                 <label for="nombres">Nombres y Apellidos:</label>
-                <input type="text" id="nombres" name="nombres" required>
-
-                <label for="correo">Correo:</label>
-                <input type="email" id="correo" name="correo" required>
-
-                <label for="celular">Contrasena:</label>
-                <input type="text" id="celular" name="celular" required>
-
-
-                <input type="submit" value="Registrar">
+                <input type="text" class="form-control" placeholder="Ingrese su nombre" id="nombreCompleto">
+    
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" class="form-control" placeholder="Ingrese su correo electrónico" id="correo">
+    
+                <label for="celular">Contraseña:</label>
+                <input type="password" class="form-control" id="contrasena" placeholder="Ingrese su contraseña">
+                
+                <br>
+                <button type="button" class="boton-registrar" onclick="registrarUsuario()">Registrar</button>
             </form>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="column">
-                    <h3>Información del Creador</h3>
-                    <p>Yeison Andrés Guzman</p>
-                    <p>Email: yguzmanl@ibero.edu.co</p>
-                    <p>Teléfono: 3153852490</p>
-                </div>
-                <div class="column">
-                    <h3>Redes Sociales</h3>
-                    <div class="footer-social-icons">
-                        <a href="#"><img src="assets/Imagen facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="assets/Twitter.jpg" alt="Twitter"></a>
-                        <a href="#"><img src="assets/Insta.jpg" alt="Instagram"></a>
-                    </div>
+</body>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="column">
+                <h3>Información del Creador</h3>
+                <p>Yeison Andrés Guzman</p>
+                <p>Email: yguzmanl@ibero.edu.co</p>
+                <p>Teléfono: 3153852490</p>
+            </div>
+            <div class="column">
+                <h3>Redes Sociales</h3>
+                <div class="footer-social-icons">
+                    <a href="#"><img src="assets/Imagen facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/Twitter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="assets/Insta.jpg" alt="Instagram"></a>
                 </div>
             </div>
-            <p>Todos los derechos reservados por Yeison Andres Guzman &copy; 2024</p>
         </div>
-    </footer>
-</body>
+        <p>Todos los derechos reservados por Yeison Andres Guzman &copy; 2024</p>
+    </div>
+</footer>
+
 </html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Psicología</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #d3d3d3; 
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-label {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .btn-ingresar {
+            background-color: #4682b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333; 
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+<script src="./scripts/Ingreso.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Inicio de Sesión - Psicología</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Más sobre depresión</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Registro</a>
+    </nav>
+    <div class="container">
+        <h2>Formulario de Ingreso</h2>
+        
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" class="form-label" placeholder="Ingrese su correo electrónico" id="correo"/>
+    
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" class="form-label" placeholder="Ingrese su contrasena" id="contrasena"/>
+            
+            <br>
+            <button type="submit" class="btn-ingresar" onclick="iniciarSesion()">Ingresar</button>
+    
+    </div>
+    <footer>
+        &copy; 2024 Todos los derechos reservados - Psicología
+    </footer>
+</body>
+</html>
