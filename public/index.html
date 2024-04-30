@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Psychology</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
     body {
-      background-color: #add8e6;
-      background-image: url('public/assets/Fondo pagina.jpg');
+      background-color: #91c8db;
       background-size: cover;
       background-position: center;
-      color: white;
+      color: rgb(12, 1, 1);
+      font-family: Arial, sans-serif;
       height: 100vh;
       margin: 0;
-      padding: 0; 
+      padding: 0;
+    }
+
+    header {
+      background-color: #4682b4;
+      color: white;
+      padding: 10px;
+      text-align: center;
     }
 
     .navbar {
@@ -30,9 +39,9 @@
     .navbar-nav .nav-link {
       font-size: 18px;
       margin-right: 20px;
-      font-weight: bold; 
-      border-radius: 5px; 
-      padding: 8px 12px; 
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 8px 12px;
     }
 
     .navbar-nav .nav-link:hover {
@@ -52,7 +61,7 @@
     }
 
     .carousel-item img {
-      width: 50%;
+      width: 60%;
       height: auto;
       margin: auto;
     }
@@ -76,7 +85,7 @@
     .video-container {
       position: relative;
       overflow: hidden;
-      padding-top: 56.25%; 
+      padding-top: 56.25%;
     }
 
     .video-container iframe {
@@ -89,7 +98,7 @@
 
     footer {
       background-color: #333;
-      color: white;
+      color: rgb(17, 1, 1);
       padding: 50px 0;
       text-align: center;
     }
@@ -102,7 +111,7 @@
     }
 
     .footer-content .column {
-      flex: 1 1 300px; 
+      flex: 1 1 300px;
       margin: 0 20px;
     }
 
@@ -126,9 +135,9 @@
 
     .footer-social-icons img {
       margin-right: 15px;
-      width: 40px; 
+      width: 40px;
       height: auto;
-      display: inline-block; 
+      display: inline-block;
     }
 
     .footer-social-icons img:last-child {
@@ -145,28 +154,27 @@
     }
   </style>
 </head>
-<body>
 
+<body>
+  <header>
+    <h1>My Personal Psicology</h1>
+  </header>
   <!-- Barra de Navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Inicio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="MasSobreDepresion.html">Más sobre depresión</a>
-        </li>
-        <li class="nav-item">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <i class="bi bi-yin-yang"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="MasSobreDepresion.html">Más sobre depresión</a>
           <a class="nav-link" href="pagina3.html">Curiosidades</a>
-          <li class="nav-item">
           <a class="nav-link" href="Registro.html">Registro</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="Ingreso.html">Ingreso</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </nav>
 
@@ -199,23 +207,25 @@
   </div>
   <div class="card">
     <div class="card-header">
-      Quote
+      Buscar ayuda no te hará menos ser humano
     </div>
     <div class="card-body">
       <blockquote class="blockquote mb-0">
-        <p>A well-known quote, contained in a blockquote element.</p>
-        <footer class="blockquote-footer">"La felicidad no es algo hecho. Viene de tus propias acciones" <cite title="Source Title">- Dalai Lama</cite></footer>
+        <p>Todos libramos una batalla interna que pocos o nadie conocen, pero no por eso debes librarla solo. ¡Bscanos!</p>
+        <footer class="blockquote-footer">"La felicidad no es algo hecho. Viene de tus propias acciones" <cite
+            title="Source Title">- Dalai Lama</cite></footer>
       </blockquote>
     </div>
   </div>
-  
+
   <!-- Secciones de contenido -->
   <div class="container mt-4">
     <div class="row">
       <div class="col-md-4">
         <div class="feature-card">
           <h2>Conceptos básicos de la depresión</h2>
-          <p>La depresión se caracteriza por un estado de ánimo persistente de tristeza, vacío o desesperanza. Aprende más sobre sus síntomas y tratamientos.</p>
+          <p>La depresión se caracteriza por un estado de ánimo persistente de tristeza, vacío o desesperanza. Aprende
+            más sobre sus síntomas y tratamientos.</p>
         </div>
       </div>
       <div class="col-md-4">
@@ -240,38 +250,39 @@
     <div class="row">
       <div class="col-md-12">
         <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Ic2w9jusbZ0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Ic2w9jusbZ0" frameborder="0"
+            allowfullscreen></iframe>
         </div>
       </div>
+    </div>
+    <div class="container">
+      <h1>¿Qué te ha dejado como enseñanza el video?</h1>
+      <p>
+        Más que solo una tristeza pasajera, la depresión no es una debilidad y uno no puede recuperarse de la noche a la mañana de manera sencilla. La depresión puede requerir tratamiento a largo plazo. Pero no te desanimes. La mayoría de las personas con depresión se sienten mejor con medicamentos, con psicoterapia o con ambos.
+
     </div>
   </div>
 
   <footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="column">
-                <h3>Información del Creador</h3>
-                <p>Yeison Andrés Guzman</p>
-                <p>Email: yguzmanl@ibero.edu.co</p>
-                <p>Teléfono: 3153852490</p>
-            </div>
-            <div class="column">
-                <h3>Redes Sociales</h3>
-                <div class="footer-social-icons">
-                    <a href="#"><img src="assets/Imagen facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="assets/Twitter.jpg" alt="Twitter"></a>
-                    <a href="#"><img src="assets/Insta.jpg" alt="Instagram"></a>
-                </div>
-            </div>
-        </div>
-        <p>Todos los derechos reservados por Yeison Andres Guzman &copy; 2024</p>
+    <div class="card">
+      <div class="card-header">
+        Todos los derechos reservados por Yeison Andres Guzman &copy; 2024
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Una página creada con cariño</h5>
+        <p class="card-text">Para personas que buscan y quieren ser escuchadas</p>
+        <a href="#" class="btn btn-primary">Regresa al principio</a>
+      </div>
     </div>
-   
-</footer>
+
+  </footer>
 
   <!-- Bootstrap JS y dependencias -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </body>
+
 </html>
